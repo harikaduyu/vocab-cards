@@ -4,11 +4,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { AllCardsPage } from "./pages/AllCardsPage";
-import { CardPage } from "./pages/CardPage";
-import { CardsPage } from "./pages/CardsPage";
-import { HomePage } from "./pages/HomePage";
-import { NewCardForm } from "./pages/NewCardForm";
+import { CardPage, CardsPage, HomePage, NewCardPage } from "./pages";
 
 export default function App() {
   return (
@@ -17,7 +13,7 @@ export default function App() {
         <Route index element={<HomePage />} />
         <Route path="cards" >
           <Route path=":cardId" element={<CardPage />} />
-          <Route path="new" element={<NewCardForm />} />
+          <Route path="new" element={<NewCardPage />} />
           <Route index element={<CardsPage /> }/>
       </Route>
     </Routes>

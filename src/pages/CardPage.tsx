@@ -1,3 +1,6 @@
+import { Card } from "../components/Card";
+
+
 export function CardPage() {
-    return <h2>Card</h2>;
+    return <Card>hello</Card>;
 }
