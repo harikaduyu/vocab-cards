@@ -1,3 +1,5 @@
+import { NewCardForm } from '../components/NewCardForm';
+
 export function NewCardPage() {
-    return <h2>NewCardPage</h2>;
+	return <NewCardForm />;
 }
