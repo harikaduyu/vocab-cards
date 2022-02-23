@@ -1,24 +1,25 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+*.py[co]
+__pycache__/
+frontend/.eslintcache
+.ipynb_checkpoints
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# the frontend static build:
+app/
 
-# testing
-/coverage
+build/
+dist/
+*.egg-info/
+MANIFEST
 
-# production
-/build
+.env
+venv/
+.venv/
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# pytest-cov
+.coverage
+htmlcov/
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# generated yaml
+k8s/*.yaml
+
 .vscode/
